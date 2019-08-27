@@ -1,13 +1,15 @@
 # OneIndex
 Onedrive Directory Index
 
+## 改进
+增加phpinfo探针
+修复中文命令不能在线预览
+跳转改成可配置，不写死
+
 ## 功能：
 不占用服务器空间，不走服务器流量，  
 
 直接列出 OneDrive 目录，文件直链下载。  
-
-## Demo
-[https://xn.tn](https://xn.tn)  
 
 ## 安装运行
 
@@ -30,10 +32,6 @@ Onedrive Directory Index
 # 每十分钟后台刷新一遍缓存
 */10 * * * * /具体路径/php /程序具体路径/one.php cache:refresh
 ```
-
-### Docker 安装运行
-
-- 请参考[TimeBye/oneindex](https://github.com/TimeBye/oneindex)
 
 ## 特殊文件实现功能  
 ` README.md `、`HEAD.md` 、 `.password`特殊文件使用  
