@@ -184,7 +184,7 @@ class AdminController{
 		}else{
 			// 非https,修改成自己提交的redirect_uri来调用
 			// $redirect_uri = 'https://oneindex.github.io/';
-			$redirect_uri = $_POST['redirect_uri'];
+			$redirect_uri = 'https://'.$_SERVER['HTTP_HOST'].get_absolute_path(dirname($_SERVER['PHP_SELF']));
 		}
 		
 		$ru = "https://developer.microsoft.com/en-us/graph/quick-start?appID=_appId_&appName=_appName_&redirectUrl={$redirect_uri}&platform=option-php";
