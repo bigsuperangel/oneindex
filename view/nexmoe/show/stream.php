@@ -99,7 +99,9 @@ if($item['size'] > 5242880){
 $type = empty($types[$ext])?"application/octet-stream":$types[$ext];
 $content = IndexController::get_content($item);
 
-header('Content-type: '.$type);
+// header('Content-type: '.$type);
+header('Content-type: %s; charset=utf-8',$type);
+
 echo $content;
 exit();
 ?>

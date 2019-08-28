@@ -5,6 +5,7 @@ Onedrive Directory Index
 增加phpinfo探针
 修复中文命令不能在线预览
 跳转改成可配置，不写死
+修改跳转中写死redirect_uri为自己提交的地址
 
 ## 功能：
 不占用服务器空间，不走服务器流量，  
